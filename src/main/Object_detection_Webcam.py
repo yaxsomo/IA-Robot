@@ -3,12 +3,15 @@ import numpy as np
 
 net = cv2.dnn.readNet('../cnf/yolov3.weights', '../cnf/yolov3.cfg')
 classes = []
+
 with open('../cnf/coco.names', 'r') as f:
     classes = f.read().splitlines()
 
 # print(classes)
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+# cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+cap = cv2.VideoCapture('../../vtest.mp4')
+
 #img = cv2.imread('image.jpg')
 
 while True:
