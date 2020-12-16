@@ -1,16 +1,16 @@
 import cv2
 import numpy as np
 
-net = cv2.dnn.readNet('yolov3.weights', 'yolov3.cfg')
+net = cv2.dnn.readNet('../cnf/yolov3.weights', '../cnf/yolov3.cfg')
 classes = []
 
-with open('coco.names', 'r') as f:
+with open('../cnf/coco.names', 'r') as f:
     classes = f.read().splitlines()
 
 #print(classes)
 
 
-img = cv2.imread('image.jpg')
+img = cv2.imread('../../image.jpg')
 height, width, _ = img.shape
 
 blob = cv2.dnn.blobFromImage(img, 1/255, (416,416), (0,0,0), swapRB=True, crop=False)
