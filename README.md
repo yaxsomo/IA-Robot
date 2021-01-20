@@ -7,10 +7,18 @@ The conda environement management is used. You can install it with this installa
 - `conda activate ia-robot`
 - `pip3 install -r requirements.txt`
 
-Les fichiers 'yolov.weights' et yolov3.cfg' sont utiliser pour définir le réseaux, ils sont présent dans le dossier `src/cnf`.
+The files `yolov.weights` and `yolov3.cfg` are used to define the network (they are located in `src/cnf`).
 
-On utilise la version 608 layer, vous pouvez en télécharger d'autres sur ce lien : https://pjreddie.com/darknet/yolo/ 
+We use the tiny version of the layer, it's based on a 200 ish layers.
+
+You can download it from this link : https://pjreddie.com/darknet/yolo/ 
 
 ## Getting started
 
 `python3 { x }`
+
+## Caution
+
+The current implementation is working but we have performance issue.
+
+It's using CPU so there is no computational acceleration and the current network is having trouble for working under a Raspberry-PI computer.
