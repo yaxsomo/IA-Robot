@@ -1,5 +1,13 @@
 # IA-Robot
 
+## Context
+
+This is a school project. We're working on a Robot.
+
+On the current repository we have defined some simple path management.
+
+Blog (FR) to see the evolution of the state of our projects : https://ynov-yrobot.medium.com/
+
 ## Environment installation
 The conda environement management is used. You can install it with this installation procedure or you can do the same with the original Python3 CLI.
 
